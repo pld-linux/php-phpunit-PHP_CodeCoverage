@@ -21,7 +21,7 @@ Requires:	php-pear
 Requires:	php-phpunit-File_Iterator >= 1.2.2
 Requires:	php-phpunit-PHP_TokenStream >= 1.0.0
 Requires:	php-phpunit-Text_Template >= 1.0.0
-Suggests:	php-xdebug
+Suggests:	php-pecl-xdebug
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
