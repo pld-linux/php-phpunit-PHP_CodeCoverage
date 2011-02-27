@@ -9,7 +9,7 @@ License:	BSD License
 Group:		Development/Languages/PHP
 Source0:	http://pear.phpunit.de/get/%{pearname}-%{version}.tgz
 # Source0-md5:	c745b86a2eb43c06a52b813e0553c8ee
-URL:		http://pear.phpunit.de/package/PHP_CodeCoverage/
+URL:		http://pear.phpunit.de/
 BuildRequires:	php-channel(pear.phpunit.de)
 BuildRequires:	php-packagexml2cl
 BuildRequires:	php-pear-PEAR >= 1:1.9.1
