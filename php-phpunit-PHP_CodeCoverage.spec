@@ -1,18 +1,18 @@
-%include	/usr/lib/rpm/macros.php
 %define		status		stable
 %define		pearname	PHP_CodeCoverage
+%include	/usr/lib/rpm/macros.php
 Summary:	%{pearname} - Library that provides collection, processing, and rendering functionality for PHP code coverage information
 Name:		php-phpunit-PHP_CodeCoverage
-Version:	1.0.4
+Version:	1.0.5
 Release:	1
 License:	BSD License
 Group:		Development/Languages/PHP
 Source0:	http://pear.phpunit.de/get/%{pearname}-%{version}.tgz
-# Source0-md5:	c745b86a2eb43c06a52b813e0553c8ee
+# Source0-md5:	38c49a6ff3a19e560d8862c0b09d7680
 URL:		http://pear.phpunit.de/
 BuildRequires:	php-channel(pear.phpunit.de)
 BuildRequires:	php-packagexml2cl
-BuildRequires:	php-pear-PEAR >= 1:1.9.1
+BuildRequires:	php-pear-PEAR >= 1:1.9.2
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.580
 Requires:	php-channel(pear.phpunit.de)
