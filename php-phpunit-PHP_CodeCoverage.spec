@@ -3,23 +3,23 @@
 %include	/usr/lib/rpm/macros.php
 Summary:	%{pearname} - Library that provides collection, processing, and rendering functionality for PHP code coverage information
 Name:		php-phpunit-PHP_CodeCoverage
-Version:	1.0.5
+Version:	1.1.0
 Release:	1
 License:	BSD License
 Group:		Development/Languages/PHP
 Source0:	http://pear.phpunit.de/get/%{pearname}-%{version}.tgz
-# Source0-md5:	38c49a6ff3a19e560d8862c0b09d7680
+# Source0-md5:	a6ab49e485f68a3e82df31c1ba908f5b
 URL:		http://pear.phpunit.de/
 BuildRequires:	php-channel(pear.phpunit.de)
 BuildRequires:	php-packagexml2cl
-BuildRequires:	php-pear-PEAR >= 1:1.9.2
+BuildRequires:	php-pear-PEAR >= 1:1.9.4
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.580
 Requires:	php-channel(pear.phpunit.de)
 Requires:	php-pear
-Requires:	php-phpunit-File_Iterator >= 1.2.2
-Requires:	php-phpunit-PHP_TokenStream >= 1.0.0
-Requires:	php-phpunit-Text_Template >= 1.0.0
+Requires:	php-phpunit-File_Iterator >= 1.3.0
+Requires:	php-phpunit-PHP_TokenStream >= 1.1.0
+Requires:	php-phpunit-Text_Template >= 1.1.1
 Suggests:	php-dom
 Suggests:	php-ezc-ConsoleTools >= 1.6
 Suggests:	php-pecl-xdebug
@@ -44,10 +44,6 @@ packagexml2cl package.xml > ChangeLog
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_bindir},%{php_pear_dir}}
 %pear_package_install
-install -p usr/bin/* $RPM_BUILD_ROOT%{_bindir}
-
-# don't care for tests
-rm -rf $RPM_BUILD_ROOT%{php_pear_dir}/tests/%{pearname}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -55,7 +51,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc ChangeLog install.log
+%doc docs/PHP_CodeCoverage/*
 %{php_pear_dir}/.registry/.channel.*/*.reg
-%attr(755,root,root) %{_bindir}/phpcov
 %{php_pear_dir}/PHP/CodeCoverage.php
 %{php_pear_dir}/PHP/CodeCoverage
