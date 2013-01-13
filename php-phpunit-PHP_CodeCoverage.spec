@@ -3,12 +3,12 @@
 %include	/usr/lib/rpm/macros.php
 Summary:	%{pearname} - Library that provides collection, processing, and rendering functionality for PHP code coverage information
 Name:		php-phpunit-PHP_CodeCoverage
-Version:	1.2.6
+Version:	1.2.7
 Release:	1
 License:	BSD License
 Group:		Development/Languages/PHP
 Source0:	http://pear.phpunit.de/get/%{pearname}-%{version}.tgz
-# Source0-md5:	88a713c5cfd8ede72c7ebb2aab22c639
+# Source0-md5:	1b6e0a3267122a58c9b7fd8a626b6cc0
 URL:		http://pear.phpunit.de/
 BuildRequires:	php-channel(pear.phpunit.de)
 BuildRequires:	php-packagexml2cl
