@@ -4,7 +4,7 @@
 Summary:	%{pearname} - Library that provides collection, processing, and rendering functionality for PHP code coverage information
 Name:		php-phpunit-PHP_CodeCoverage
 Version:	1.2.7
-Release:	1
+Release:	2
 License:	BSD License
 Group:		Development/Languages/PHP
 Source0:	http://pear.phpunit.de/get/%{pearname}-%{version}.tgz
@@ -20,11 +20,11 @@ Requires:	php-pear
 Requires:	php-phpunit-File_Iterator >= 1.3.0
 Requires:	php-phpunit-PHP_TokenStream >= 1.1.3
 Requires:	php-phpunit-Text_Template >= 1.1.1
-Suggests:	php-dom
+Suggests:	php(dom)
+Suggests:	php(reflection)
+Suggests:	php(spl)
 Suggests:	php-ezc-ConsoleTools >= 1.6
 Suggests:	php-pecl-xdebug
-Suggests:	php-reflection
-Suggests:	php-spl
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
