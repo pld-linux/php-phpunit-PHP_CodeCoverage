@@ -23,8 +23,8 @@ Requires:	php-phpunit-Text_Template >= 1.1.1
 Suggests:	php(dom)
 Suggests:	php(reflection)
 Suggests:	php(spl)
+Suggests:	php(xdebug)
 Suggests:	php-ezc-ConsoleTools >= 1.6
-Suggests:	php-pecl-xdebug
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
