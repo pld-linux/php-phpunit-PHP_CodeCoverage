@@ -1,6 +1,5 @@
 %define		status		stable
 %define		pearname	PHP_CodeCoverage
-%include	/usr/lib/rpm/macros.php
 Summary:	%{pearname} - Library that provides collection, processing, and rendering functionality for PHP code coverage information
 Name:		php-phpunit-PHP_CodeCoverage
 Version:	1.2.17
